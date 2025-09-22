@@ -164,6 +164,7 @@
       max-width: 1350px;
       text-align: left;
       margin: 4rem;
+      justify-content: center;
     }
 
     /* The bottom text and links*/
@@ -202,7 +203,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100px;
-      padding-left: 1rem;
+      padding: 1.25rem;
       border: 5px solid #2a7a2a;
       border-radius: 75px;
       margin: 2rem;
