@@ -1,0 +1,239 @@
+/* Reset & basics */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+/* Background images and the Background*/
+    .BG1 {
+  background-image: url(Images/Family\ Camping.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2000px 1500px;
+  background-attachment: fixed;
+}
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+  }
+
+  /*The top Navigation Bar*/
+  
+  .navbar {
+    overflow: auto;
+    font-family: 'inter', sans-serif;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+    
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+    
+  header {
+    border-bottom: 1px solid #ddd;
+  }
+
+  
+  .logo { 
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #111;
+  }
+
+  .HomeBtn {
+    background-image: url(Images/Shield\ logos.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-origin: content-box;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #111;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #2a7a2a; /* dark green hover */
+  }
+  
+  .nav-actions .btn {
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Buttons */
+
+  .Shp-Btn {
+    display: inline block;
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: #2a7a2a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .btn-green {
+    background-color: #37a837; /* green */
+    color: white;
+  }
+  
+  .btn-green:hover {
+    background-color: #2a7a2a;
+  }
+
+    .btn-large {
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+  }
+  
+  /* Hero section */
+
+  .hero {
+    max-width: 500px;
+    margin: 3em auto;
+    padding: 0rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    color: #000000;
+    text-align: center;
+  }
+
+    .hero2 h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+    .hero2 p {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    padding-left: 2rem;
+    color: #000000;
+    text-align: right;
+  }
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #d0eac8;
+      background-position: center;
+      padding: 30px;
+      border: 5px solid #2e8b57;
+      border-radius: 75px;
+      max-width: 1350px;
+      text-align: left;
+      margin: 4rem;
+    }
+
+    /* The bottom text and links*/
+
+    .bg2 {
+      background-color:#2e8b57;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      padding: 3rem;
+      text-decoration: none;
+      padding: 2rem;
+    }
+
+    .BtmLinks {
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .BtmLinks a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .BtmLinks h3 {
+      font-family: arial, sans-serif;
+    }
+
+    /* Image contaniers*/
+
+    .Imgcontanier1 {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100px;
+      padding-left: 1rem;
+      border: 5px solid #2a7a2a;
+      border-radius: 75px;
+      margin: 2rem;
+    }
+    
+    .Imgcontanier2 {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: 100px;
+      padding-left: 1rem;
+      border: 5px solid #2a7a2a;
+      border-radius: 75px;
+      margin: 2rem;
+    }
+
+    .Imgcontanier1 img {
+      padding: 1rem;
+      margin: 2rem;
+      border: 5px solid #2a7a2a;
+      border-radius: 2rem;
+      background-color: rgb(202, 202, 202);
+      background-position: left;
+    }
+
+    .Imgcontanier2 img {
+      padding: 1rem;
+      margin: 2rem;
+      border: 5px solid #2a7a2a;
+      border-radius: 2rem;
+      background-color: rgb(202, 202, 202);
+    }
