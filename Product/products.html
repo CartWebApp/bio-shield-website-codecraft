@@ -3,21 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bio Shield</title>
+  <title>Bio Shield | Products</title>
   <link rel="stylesheet" href="../styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+
+    .products-section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+
+    .products-section h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+
+    .product-card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+
+    .product-card p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+
+    .price {
+      font-weight: bold;
+      color: #e63946;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+
+    .btn {
+      padding: 10px 16px;
+      background: #1d3557;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+
+    .btn:hover {
+      background: #457b9d;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo"><a href="../index.html">Bio Shield</a></div>
       <ul class="nav-links">
-        <li><a href="../Product/products.html">Products</a></li>
+        <li><a href="../Product/products.html" class="active">Products</a></li>
         <li><a href="../About/about.html">About Us</a></li>
         <li><a href="../Team/team.html">Our Team</a></li>
         <li><a href="../Contact/Contact.html">Contacts</a></li>
       </ul>
     </nav>
   </header>
+
+
+  <main>
+    <section class="products-section">
+      <h1>Our Products</h1>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1603398938378-d1785e6f9a69" alt="Bio Shield Spray">
+          <h2>Bio Shield Spray</h2>
+          <p>Protective antibacterial spray for everyday use.</p>
+          <span class="price">$12.99</span>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1588776814546-ec7ed0a02f6b" alt="Bio Shield Wipes">
+          <h2>Bio Shield Wipes</h2>
+          <p>Convenient disinfectant wipes for surfaces and hands.</p>
+          <span class="price">$8.99</span>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1612203985729-0f3e1b8c7f6e" alt="Bio Shield Mask">
+          <h2>Bio Shield Mask</h2>
+          <p>Reusable protective face mask with advanced filter.</p>
+          <span class="price">$14.99</span>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1609840179512-1a61a20f2f7e" alt="Bio Shield Hand Gel">
+          <h2>Bio Shield Hand Gel</h2>
+          <p>Fast-drying sanitizer with moisturizing formula.</p>
+          <span class="price">$6.99</span>
+          <button class="btn">Add to Cart</button>
+        </div>
+
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1598511723873-b97de6b93716" alt="Bio Shield Plus Kit">
+          <h2>Bio Shield Plus Kit</h2>
+          <p>Complete protection kit for everyday safety.</p>
+          <span class="price">$29.99</span>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
